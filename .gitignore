@@ -36,7 +36,6 @@ Desktop.ini
 
 # Log files
 *.log
-*.sql
 *.sqlite
 
 # Composer and Node.js related
