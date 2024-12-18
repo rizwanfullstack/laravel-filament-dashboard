@@ -55,17 +55,11 @@ class User extends Authenticatable
     protected static function booted(): void
     {
         static::creating(function (User $user) {
-
-
-            dd(request());
-
-            // // Skip the logic if the request is for the specific route
-            // if (request()->routeIs('admin.users.create')) {
-            //     return; // Skip setting the default role
-            // }
-
-            // Set the default role for all other cases
-            $user->role = 'user';
+            // Check if the request is not from the CLI
+            if (!app()->runningInConsole()) {
+                // Set the default role only for browser-based requests
+                $user->role = 'user';
+            }
         });
     }
 
