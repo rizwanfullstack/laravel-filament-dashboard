@@ -24,12 +24,18 @@ Project is created using Laravel version 11.
 ```bash
 git clone https://github.com/rizwanfullstack/laravel-filament-dashboard
 ```
-### 2. Install Dependecies
+
+### 2. Create .env file
+```bash
+cp .env.example .env
+```
+
+### 3. Install Dependecies
 ```bash
 composer install
 ```
 
-### 3. Env Configurations
+### 4. Env Configurations
 ```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -42,34 +48,34 @@ GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 ```
 
-### 4. Run Migrations
+### 5. Run Migrations
 ```bash
 php artisan migrate --seed
 ```
 
 
-### 5. Make an Admin User
+### 6. Make an Admin User
 ```bash
 php artisan make:filament-user
 ```
 
-### 6. Run Migrations
+### 7. Run Migrations
 ```bash
 php artisan migrate
 ```
 
 
-### 7. Running the Project
+### 8. Running the Project
 ```bash
 php artisan serve
 ```
 
-### 8. Login in Admin User
+### 9. Login in Admin User
 Go to the following route
 ```bash
 "/admin/login"
 ```
-### 8. Register & Login in Normal User
+### 10. Register & Login in Normal User
 ```bash
 # Register the Normal User
 "/user-panel/register"
@@ -77,3 +83,9 @@ Go to the following route
 # Login the Normal User
 "/user-panel/login"
 ```
+
+
+
+### NOTE: You need to configure the Google Client from dashhboard by following the official guide
+link : https://console.cloud.google.com/apis/dashboard
+#### Guide you can follow from Step 4:   https://www.itsolutionstuff.com/post/laravel-8-socialite-login-with-google-account-exampleexample.html 
