@@ -50,3 +50,9 @@ DB_PASSWORD=your_database_password
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 ```
+
+
+### 6. Running the Project
+```bash
+php artisan serve
+```
