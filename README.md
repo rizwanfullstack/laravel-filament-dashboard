@@ -19,7 +19,7 @@ Ensure the following are installed on your system:
 ---
 
 ## **Project Setup**
-
+Project is created using Laravel version 11.
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/rizwanfullstack/laravel-filament-dashboard
@@ -50,9 +50,21 @@ DB_PASSWORD=your_database_password
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 ```
-
-
 ### 6. Running the Project
 ```bash
 php artisan serve
+```
+
+### 7. Login in Admin User
+Go to the following route
+```bash
+"/admin/login"
+```
+### 8. Register & Login in Normal User
+```bash
+# Register the Normal User
+"/user-panel/register"
+
+# Login the Normal User
+"/user-panel/login"
 ```
