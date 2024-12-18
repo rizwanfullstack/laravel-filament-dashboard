@@ -28,17 +28,8 @@ git clone https://github.com/rizwanfullstack/laravel-filament-dashboard
 ```bash
 composer install
 ```
-### 3. Make an Admin User
-```bash
-php artisan make:filament-user
-```
 
-### 4. Run Migrations
-```bash
-php artisan migrate
-```
-
-### 5. Env Configurations
+### 3. Env Configurations
 ```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -50,12 +41,30 @@ DB_PASSWORD=your_database_password
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 ```
-### 6. Running the Project
+
+### 4. Run Migrations
+```bash
+php artisan migrate --seed
+```
+
+
+### 5. Make an Admin User
+```bash
+php artisan make:filament-user
+```
+
+### 6. Run Migrations
+```bash
+php artisan migrate
+```
+
+
+### 7. Running the Project
 ```bash
 php artisan serve
 ```
 
-### 7. Login in Admin User
+### 8. Login in Admin User
 Go to the following route
 ```bash
 "/admin/login"
